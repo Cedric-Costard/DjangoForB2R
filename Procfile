@@ -1,1 +1,3 @@
-web: gunicorn FirstTryDjango.wsgi
+web: gunicorn FirstTryDjango.wsgi:application --log-file - --log-level debug
+python manage.py collectstatic --noinput
+manage.py migrate
