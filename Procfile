@@ -1,1 +1,1 @@
-web: gunicorn DjangoForB2R.wsgi
+web: gunicorn FirstTryDjango.wsgi
