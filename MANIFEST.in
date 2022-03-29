@@ -1,5 +1,0 @@
-include LICENSE
-include README.rst
-recursive-include DjangoForB2R/static *
-recursive-include DjangoForB2R/templates *
-recursive-include docs *
