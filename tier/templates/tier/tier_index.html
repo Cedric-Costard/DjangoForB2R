@@ -1,16 +1,24 @@
+{% extends 'home/base.html' %}
 
+{% block title %}
+Liste des réunions
+{% endblock title %}
 
-{% for article in articles %}
+{% block body %}
 
-    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-        {% comment %} <div class="card-header">{{ article.title }}</div> {% endcomment %}
-        <div class="card-body">
-          <h3 class="card-title">{{ article.title }}</h3>
-          <p class="card-text">{{ article.description }}</p>
-          <p class="card-text"><small class="text-muted">Début: {{ article.dateInit }}</small></p>
-          <p class="card-text"><small class="text-muted">Fin: {{ article.dateEnd }}</small></p>
-          <a href="article/{{ article.title }}">{{ article.title }}</a>
+  {% for article in articles %}
+
+      <div class="card text-white bg-dark mb-3 p-3">
+          {% comment %} <div class="card-header">{{ article.title }}</div> {% endcomment %}
+          <div class="card-body">
+            <h3 class="card-title">{{ article.title }}</h3>
+            <p class="card-text">{{ article.description }}</p>
+            <p class="card-text"><small class="text-muted">Début: {{ article.dateInit }}</small></p>
+            <p class="card-text"><small class="text-muted">Fin: {{ article.dateEnd }}</small></p>
+            <a href="article/{{ article.title }}">{{ article.title }}</a>
+          </div>
         </div>
-      </div>
 
-{% endfor %}
+  {% endfor %}
+
+{% endblock body %}

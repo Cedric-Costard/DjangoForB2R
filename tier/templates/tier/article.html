@@ -1,8 +1,18 @@
-<div class="container">
-    <h2>{{ article.title }}</h2>
-    <p class="fst-italic">{{ article.author }}</p>
-    <p class="card-text">{{ article.description }}</p>
-    <p class="card-text"><small class="text-muted">Début: {{ article.dateInit }}</small></p>
-    <p class="card-text"><small class="text-muted">Fin: {{ article.dateEnd }}</small></p>
-    <p>{{ message }}</p>
-</div>
+{% extends 'home/base.html' %}
+
+{% block title %}
+{{ article.title }}
+{% endblock title %}
+
+{% block body %}
+
+    <div class="text-white bg-dark mb-3 p-3">
+        <h2>{{ article.title }}</h2>
+        <p class="fst-italic">{{ article.author }}</p>
+        <p class="card-text">{{ article.description }}</p>
+        <p class="card-text"><small class="text-muted">Début: {{ article.dateInit }}</small></p>
+        <p class="card-text"><small class="text-muted">Fin: {{ article.dateEnd }}</small></p>
+        <p>{{ message }}</p>
+    </div>
+
+{% endblock body %}

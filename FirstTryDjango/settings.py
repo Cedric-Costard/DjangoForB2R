@@ -115,7 +115,7 @@ LANGUAGE_CODE = 'fr-FR'
 # UTC+1 = 'Etc/GMT-1'
 # UTC+2 = 'Etc/GMT-2'
 
-TIME_ZONE = 'Etc/GMT-1'
+TIME_ZONE = 'Etc/GMT-2'
 
 USE_I18N = True
 
