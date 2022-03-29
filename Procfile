@@ -1,0 +1,1 @@
+web: gunicorn DjangoForB2R.wsgi
