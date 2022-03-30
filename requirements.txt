@@ -34,6 +34,7 @@ esbonio==0.10.2
 fasteners==0.14.1
 filelock==3.0.12
 future==0.18.2
+gunicorn==20.1.0
 httplib2==0.14.0
 idna==2.8
 imagesize==1.3.0
@@ -111,5 +112,6 @@ virtualenv==20.0.17
 virtualenv-clone==0.3.0
 wadllib==1.3.3
 websocket-client==0.53.0
+whitenoise==6.0.0
 xkit==0.0.0
 zipp==1.0.0
